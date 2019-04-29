@@ -26,7 +26,7 @@ Antes de comenzar, comentar que utilizo la shell **fish**, la cual no es compati
   pip install jupyter
   ```
 
-  Jupyter incorpora por defecto el intérprete de Python iPython, con el cual será posible crear notebooks sobre dicho lenguaje. Como se va a utilizar el lenguaje R, será necesario instalar tanto el core del lenguaje como el intérprete para Jupyter.
+  Jupyter incorpora por defecto el intérprete de Python **iPython**, con el cual será posible crear notebooks sobre dicho lenguaje. Como se va a utilizar el lenguaje R, será necesario instalar tanto el core del lenguaje como el intérprete para Jupyter.
 
 * **R**
 
@@ -34,4 +34,8 @@ Antes de comenzar, comentar que utilizo la shell **fish**, la cual no es compati
   ```
   sudo apt-get install r-base r-base-dev
   ```
-  Únicamente faltaría instalar el intérprete
+  Únicamente faltaría instalar el intérprete de R, llamado **IRkernel**, estando el entorno virtual activado:
+  ```
+  install.packages('IRkernel')
+  IRkernel::installspec()
+  ```
